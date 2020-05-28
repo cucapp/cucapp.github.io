@@ -24,6 +24,7 @@ class Timer extends React.Component {
       }
       if (seconds === 0) {
         if (minutes === 0) {
+          this.props.handleTheEnd();
           clearInterval(this.myInterval);
         } else {
           this.setState(({ minutes }) => ({

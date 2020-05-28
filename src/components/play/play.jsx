@@ -18,6 +18,7 @@ class Play extends React.Component {
       metadata: {},
       intrebari: [{ intrebare: "", raspuns: "" }],
       raspunsuri: [],
+      timeEnded: false,
     };
   }
 
@@ -93,16 +94,18 @@ class Play extends React.Component {
   }
 
   handleChange = (event) => {
-    let newState = {};
-    newState.answerUser = this.state.answerUser;
-    newState.answerUser[this.state.nr_intrebare - 1] = event.target.value;
-    this.setState(newState);
+    if (this.state.timeEnded === false) {
+      let newState = {};
+      newState.answerUser = this.state.answerUser;
+      newState.answerUser[this.state.nr_intrebare - 1] = event.target.value;
+      this.setState(newState);
+    }
   };
 
   handleShowAnswer = () => this.setState({ showAnswer: true });
 
   handleTrue = () => {
-    let newState = {};
+    let newState = { timeEnded: false };
     newState.raspunsuri = this.state.raspunsuri;
     newState.raspunsuri.push(true);
     newState.showAnswer = false;
@@ -113,7 +116,7 @@ class Play extends React.Component {
   };
 
   handleFalse = () => {
-    let newState = {};
+    let newState = { timeEnded: false };
     newState.raspunsuri = this.state.raspunsuri;
     newState.raspunsuri.push(false);
     newState.showAnswer = false;
@@ -121,6 +124,10 @@ class Play extends React.Component {
     newState.answerUser.push("");
     newState.nr_intrebare = this.state.nr_intrebare + 1;
     this.setState(newState);
+  };
+
+  handleTheEnd = () => {
+    this.setState({ timeEnded: true });
   };
 
   render() {
@@ -166,6 +173,7 @@ class Play extends React.Component {
                               20
                           ))
                       }
+                      handleTheEnd={this.handleTheEnd}
                     />
                   )}
                 </>
