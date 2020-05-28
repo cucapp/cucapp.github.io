@@ -102,7 +102,7 @@ class Play extends React.Component {
     }
   };
 
-  handleShowAnswer = () => this.setState({ showAnswer: true });
+  handleShowAnswer = () => this.setState({ showAnswer: true, timeEnded: true });
 
   handleTrue = () => {
     let newState = { timeEnded: false };
