@@ -240,6 +240,9 @@ class Play extends React.Component {
         <div className="interaction">
           <div className={`try ${this.state.showAnswer ? "" : "show"}`}>
             <input
+              style={{
+                cursor: !this.state.timeEnded ? "text" : "not-allowed",
+              }}
               value={this.state.answerUser[this.state.nr_intrebare - 1]}
               placeholder="Răspunsul tău..."
               onChange={this.handleChange}
