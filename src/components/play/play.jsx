@@ -163,7 +163,7 @@ class Play extends React.Component {
                     <Timer
                       key={this.state.nr_intrebare}
                       time={
-                        -10 +
+                        60 +
                         (this.state.loading ||
                           Math.floor(
                             (this.state.intrebari[
