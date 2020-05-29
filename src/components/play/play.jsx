@@ -163,7 +163,7 @@ class Play extends React.Component {
                     <Timer
                       key={this.state.nr_intrebare}
                       time={
-                        60 +
+                        -10 +
                         (this.state.loading ||
                           Math.floor(
                             (this.state.intrebari[
@@ -246,6 +246,7 @@ class Play extends React.Component {
               value={this.state.answerUser[this.state.nr_intrebare - 1]}
               placeholder="Răspunsul tău..."
               onChange={this.handleChange}
+              readOnly={this.state.timeEnded}
             />
             <CustomButton onClick={this.handleShowAnswer}>
               Vezi răspunsul

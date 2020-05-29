@@ -86,6 +86,9 @@
     }
     .review {
       .review-item {
+        &:hover {
+          box-shadow: none;
+        }
         .option {
           font-size: 0.75rem;
           width: 30px;

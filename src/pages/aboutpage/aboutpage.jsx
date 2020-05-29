@@ -9,7 +9,9 @@ const AboutPage = () => (
       <div className="descriere">
         CuCapp a fost creat pentru a familiariza oamenii cu frumusețea jocurilor
         intelectuale, și, de asemenea, pentru a face antrenamentul mai ușor
-        pentru echipe, în special pe timp de carantină.
+        pentru echipe, în special pe timp de carantină. Prin intermediul acestui
+        site dorim să susținem activitatea CMJI chiar și în afara evenimentelor
+        organizate.
         <div className="br" />
         La moment, site-ul este în versiune beta – din păcate, întrebările cu
         material distributiv nu sunt disponibile. De asemenea, folosim un
@@ -17,9 +19,14 @@ const AboutPage = () => (
         la pagină.
         <div className="br" />
         Acest proiect a fost elaborat din propria inițiativă de către jucătorii
-        echipei Jean-Jacques Pidjaques, Claudiu Babin și Mihail Lavric. În cazul
-        în care aveți sugestii sau reclamații, nu ezitați să ne contactați pe
-        Facebook:{" "}
+        echipei Jean-Jacques Pidjaques, Claudiu Babin și Mihail Lavric. Mulțumim
+        în special Clubului Moldovenesc de Jocuri Intelectuale pentru
+        organizarea jocurilor, crearea întrebărilor, publicarea lor pe site-ul{" "}
+        <a target="_blank" rel="noopener noreferrer" href="http://cuc.md">
+          cuc.md
+        </a>{" "}
+        și testarea proiectului. În cazul în care aveți sugestii sau reclamații,
+        nu ezitați să ne contactați pe Facebook:{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"

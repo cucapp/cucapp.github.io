@@ -11,10 +11,13 @@ const Description = () => (
     </div>
     {/* <divc className="bar" /> */}
     <div className="text">
-      Ce? Unde? Când? este un joc intelectual destinat tuturor celor pasionați
-      de întrebări provocatoare și răspunsuri frumoase. Fie că joci singur sau
-      împreună cu echipa ta, CuCapp îți permite să faci asta comod, direct din
-      fața ecranului. Joacă Cu Cap!
+      Ce? Unde? Când? este un joc intelectual organizat de{" "}
+      <a target="_blank" rel="noopener noreferrer" href="http://cuc.md">
+        Clubul Moldovenesc de Jocuri Intelectuale
+      </a>
+      , destinat tuturor celor pasionați de întrebări provocatoare și răspunsuri
+      frumoase. Fie că joci singur sau împreună cu echipa ta, CuCapp îți permite
+      să faci asta comod, direct din fața ecranului. Joacă Cu Cap!
     </div>
   </div>
 );
