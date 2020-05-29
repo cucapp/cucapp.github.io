@@ -13,11 +13,6 @@ const AboutPage = () => (
         site dorim să susținem activitatea CMJI chiar și în afara evenimentelor
         organizate.
         <div className="br" />
-        La moment, site-ul este în versiune beta – din păcate, întrebările cu
-        material distributiv nu sunt disponibile. De asemenea, folosim un
-        hosting gratuit și din această cauză, vă îndemnăm să nu faceți refresh
-        la pagină.
-        <div className="br" />
         Acest proiect a fost elaborat din propria inițiativă de către jucătorii
         echipei Jean-Jacques Pidjaques, Claudiu Babin și Mihail Lavric. Mulțumim
         în special Clubului Moldovenesc de Jocuri Intelectuale pentru
@@ -43,6 +38,11 @@ const AboutPage = () => (
           Claudiu
         </a>
         .
+        <div className="br" />
+        La moment, site-ul este în versiune beta – din păcate, întrebările cu
+        material distributiv nu sunt disponibile. De asemenea, folosim un
+        hosting gratuit și din această cauză, vă îndemnăm să nu faceți refresh
+        la pagină.
         <div className="br" />
         Dacă doriți să susțineți financiar proiectul, o puteți face chiar aici:{" "}
         <a
