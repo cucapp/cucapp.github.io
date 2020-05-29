@@ -39,12 +39,15 @@ const AboutPage = () => (
         </a>
         .
         <div className="br" />
-        La moment, site-ul este în versiune beta – din păcate, întrebările cu
-        material distributiv nu sunt disponibile. De asemenea, folosim un
-        hosting gratuit și din această cauză, vă îndemnăm să nu faceți refresh
-        la pagină.
+        Vă urăm un joc plăcut!
         <div className="br" />
-        Dacă doriți să susțineți financiar proiectul, o puteți face chiar aici:{" "}
+        *La moment, site-ul este în versiune beta – din păcate, întrebările cu
+        material distributiv nu sunt disponibile. De asemenea, planificăm să mai
+        introducem funcționalități și să adăugăm întrebări noi, atât din
+        Campionatul Moldovenesc, cât și din cele străine.
+        <div className="br" />
+        **Dacă doriți să susțineți financiar proiectul, o puteți face chiar
+        aici:{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -52,8 +55,6 @@ const AboutPage = () => (
         >
           https://www.paypal.me/cucapp
         </a>
-        <div className="br" />
-        Vă urăm un joc plăcut!
       </div>
     </div>
 
